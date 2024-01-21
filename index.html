@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Sandbox</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container-left-bar">
+        <div class="container-bar-header align-center title-text">
+          <img src="./assets/logo.svg" /> Alpha Store
+        </div>
+        <div class="container-bar-1">
+          <div class="container-menu-title title-text-bold">CUSTOM</div>
+          <!-- menu item -->
+          <div class="menu-item align-center">
+            <div class="menu-item-icon align-center">
+              <img alt="menu-item" src="./assets/menu1.svg" />
+            </div>
+            <div class="menu-item-lable align-center">Dashboard</div>
+            <div class="menu-item-arrow align-center">
+              <img alt="menu-item" src="./assets/arrow.svg" />
+            </div>
+          </div>
+
+          <div class="menu-item align-center">
+            <div class="menu-item-icon align-center">
+              <img alt="menu-item" src="./assets/products.svg" />
+            </div>
+            <div class="menu-item-lable align-center">Products</div>
+            <div class="menu-item-arrow align-center">
+              <img alt="menu-item" src="./assets/arrow.svg" />
+            </div>
+          </div>
+          <div class="menu-item align-center">
+            <div class="menu-item-icon align-center">
+              <img alt="menu-item" src="./assets/customers.svg" />
+            </div>
+            <div class="menu-item-lable align-center">Customers</div>
+            <div class="menu-item-arrow align-center">
+              <img alt="menu-item" src="./assets/arrow.svg" />
+            </div>
+          </div>
+          <div class="menu-item align-center">
+            <div class="menu-item-icon align-center">
+              <img alt="menu-item" src="./assets/custom.svg" />
+            </div>
+            <div class="menu-item-lable align-center">Custom Properties</div>
+            <div class="menu-item-arrow align-center">
+              <img alt="menu-item" src="./assets/arrow.svg" />
+            </div>
+          </div>
+          <div class="menu-item align-center">
+            <div class="menu-item-icon align-center">
+              <img alt="menu-item" src="./assets/library.svg" />
+            </div>
+            <div class="menu-item-lable align-center">Libraries</div>
+            <div class="menu-item-arrow align-center">
+              <img alt="menu-item" src="./assets/arrow.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="container-bar-2">
+          <div class="container-menu-title title-text-bold">COMPONENTS</div>
+          <!-- menu item -->
+
+          <div class="menu-item align-center">
+            <div class="menu-item-icon align-center">
+              <img alt="menu-item" src="./assets/base.svg" />
+            </div>
+            <div class="menu-item-lable align-center">Base</div>
+            <div class="menu-item-arrow align-center">
+              <img alt="menu-item" src="./assets/arrow.svg" />
+            </div>
+          </div>
+          <div class="menu-item align-center">
+            <div class="menu-item-icon align-center">
+              <img alt="menu-item" src="./assets/custom-folder.svg" />
+            </div>
+            <div class="menu-item-lable align-center">Custom</div>
+            <div class="menu-item-arrow align-center">
+              <img alt="menu-item" src="./assets/arrow.svg" />
+            </div>
+          </div>
+          <div class="menu-item align-center">
+            <div class="menu-item-icon align-center">
+              <img alt="menu-item" src="./assets/extended.svg" />
+            </div>
+            <div class="menu-item-lable align-center">Extended</div>
+            <div class="menu-item-arrow align-center">
+              <img alt="menu-item" src="./assets/arrow.svg" />
+            </div>
+          </div>
+          <div class="menu-item align-center">
+            <div class="menu-item-icon align-center">
+              <img alt="menu-item" src="./assets/links.svg" />
+            </div>
+            <div class="menu-item-lable align-center">Links</div>
+            <div class="menu-item-arrow align-center">
+              <img alt="menu-item" src="./assets/arrow.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-center">
+        <div class="container-bar-header border-bottom align-center"></div>
+        <div class="container-center-body">
+          <div class="promotion-section">
+            <div class="title-text">
+              <h1 class="promotion-title">Upgrade yor plan</h1>
+              <div style="margin-top: 1rem">
+                70% discount for 1st year of subscription
+              </div>
+              <div class="promotion-actions">
+                <button class="button button-primary">Go Primium</button>
+                <button class="button button-secondary">Try For Free</button>
+              </div>
+            </div>
+          </div>
+          <div class="main-section align-center">
+            <div class="content-card" style="width: 75%">
+              <div class="content-card-header-section">
+                <div class="content-card-header-title title-text-bold">
+                  Daily Visitors
+                </div>
+                <div class="content-card-header-subtitle">
+                  Today vs Yesterady
+                </div>
+              </div>
+              <div class="content-card-body common-padding">
+                <canvas id="myChart" height="100%"></canvas>
+              </div>
+            </div>
+            <div class="content-card">
+              <div class="content-card-header-section">
+                <div class="content-card-header-title title-text-bold"></div>
+                <div class="content-card-header-subtitle">Overview</div>
+              </div>
+              <div class="content-card-body">
+                <div class="overview-matrix-card common-padding-top">
+                  <div class="matrix-button align-center">
+                    <div
+                      class="matrix-button-value title-text-bold text-ellipses"
+                    >
+                      $21K
+                    </div>
+                    <div class="matrix-button-title">Order Value</div>
+                  </div>
+                  <div class="matrix-button align-center">
+                    <div
+                      class="matrix-button-value title-text-bold text-ellipses"
+                    >
+                      $21K
+                    </div>
+                    <div class="matrix-button-title">Order Value</div>
+                  </div>
+                </div>
+                <div class="overview-bar-charts">
+                  <div class="overview-bar-charta-details">
+                    Meetings
+                    <div
+                      class=""
+                      style="
+                        background-color: rgba(255, 255, 255, 0.02);
+                        width: 100%;
+                        height: 5px;
+                        position: relative;
+                      "
+                    >
+                      <div
+                        class=""
+                        style="
+                          background-color: rgba(255, 255, 255, 0.02);
+                          width: 70%;
+                          height: 5px;
+                          position: absolute;
+                          background-color: #51459e;
+                          border-radius: 10px;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="overview-bar-charta-details">
+                    Details
+                    <div
+                      class=""
+                      style="
+                        background-color: rgba(255, 255, 255, 0.02);
+                        width: 100%;
+                        height: 5px;
+                        position: relative;
+                      "
+                    >
+                      <div
+                        class=""
+                        style="
+                          background-color: rgba(255, 255, 255, 0.02);
+                          width: 70%;
+                          height: 5px;
+                          position: absolute;
+                          background-color: #84e8f4;
+                          border-radius: 10px;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="overview-bar-charta-details">
+                    Order Value
+                    <div
+                      class=""
+                      style="
+                        background-color: rgba(255, 255, 255, 0.02);
+                        width: 100%;
+                        height: 5px;
+                        position: relative;
+                      "
+                    >
+                      <div
+                        class=""
+                        style="
+                          background-color: rgba(255, 255, 255, 0.02);
+                          width: 70%;
+                          height: 5px;
+                          position: absolute;
+                          background-color: #fff;
+                          border-radius: 10px;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="overview-bar-charta-details">
+                    Meetings
+                    <div
+                      class=""
+                      style="
+                        background-color: rgba(255, 255, 255, 0.02);
+                        width: 100%;
+                        height: 5px;
+                        position: relative;
+                      "
+                    >
+                      <div
+                        class=""
+                        style="
+                          background-color: rgba(255, 255, 255, 0.02);
+                          width: 70%;
+                          height: 5px;
+                          position: absolute;
+                          background-color: #51459e;
+                          border-radius: 10px;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="data-section">
+            <div class="data-sub-section content-card" style="">
+              <div class="content-card-header-section">
+                <div class="content-card-header-title title-text-bold">
+                  Recent Customers
+                </div>
+                <div class="content-card-header-subtitle"></div>
+                <div class="content-card-body" style="font-size: 10px">
+                  <div class="contact-details-with-analytics">
+                    <div class="contact-icon-container">
+                      <img src="./assets/🖼 Image.png" />
+                    </div>
+                    <div class="contact-title-container">
+                      <div class="contact-title title-text">Seth Daniels</div>
+                      <div class="contact-subtitle">@sethdaniels</div>
+                    </div>
+                    <div class="contact-graph-container">
+                      <canvas id="1-customer" height="1rem"></canvas>
+                    </div>
+                  </div>
+                  <div class="contact-details-with-analytics">
+                    <div class="contact-icon-container">
+                      <img src="./assets/🖼 Image.png" />
+                    </div>
+                    <div class="contact-title-container">
+                      <div class="contact-title title-text">Seth Daniels</div>
+                      <div class="contact-subtitle">@sethdaniels</div>
+                    </div>
+                    <div class="contact-graph-container">
+                      <canvas id="1-customer" height="1rem"></canvas>
+                    </div>
+                  </div>
+                  <div class="contact-details-with-analytics">
+                    <div class="contact-icon-container">
+                      <img src="./assets/🖼 Image.png" />
+                    </div>
+                    <div class="contact-title-container">
+                      <div class="contact-title title-text">Seth Daniels</div>
+                      <div class="contact-subtitle">@sethdaniels</div>
+                    </div>
+                    <div class="contact-graph-container">
+                      <canvas id="1-customer" height="1rem"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="data-sub-section content-card" style="">
+              <div class="content-card-header-section">
+                <div class="content-card-header-title title-text-bold">
+                  Monthly Sales
+                </div>
+                <div class="content-card-header-subtitle"></div>
+                <div class="content-card-body common-padding">
+                  <canvas id="monthly-sales" height="100%"></canvas>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="data-section-1"></div>
+            <div class="data-section-2"></div> -->
+          </div>
+        </div>
+      </div>
+      <div class="container-right-bar">
+        <div class="container-bar-header border-bottom align-center">
+          <h4 class="title-text">Top Customers</h4>
+        </div>
+        <div class="customers-container common-padding-top" style="flex: 2">
+          <!-- customer name -->
+          <div class="customer-details">
+            <div class="customer-details-icon">
+              <div class="align-center">N</div>
+            </div>
+            <div class="customer-details-content">
+              <div class="customer-details-title title-text-bold">
+                Leslie Alexander
+              </div>
+              <div class="customer-details-subtitle">Los Angeles, CA</div>
+            </div>
+          </div>
+          <div class="customer-details">
+            <div class="customer-details-icon">
+              <div class="align-center">MT</div>
+            </div>
+            <div class="customer-details-content">
+              <div class="customer-details-title title-text-bold">
+                Mike Taylor
+              </div>
+              <div class="customer-details-subtitle">Cinceniti, OH</div>
+            </div>
+          </div>
+          <div class="customer-details">
+            <div class="customer-details-icon">
+              <div class="align-center">DR</div>
+            </div>
+            <div class="customer-details-content">
+              <div class="customer-details-title title-text-bold">
+                Dianne Russell
+              </div>
+              <div class="customer-details-subtitle">Las Vegas, NV</div>
+            </div>
+          </div>
+          <div class="customer-details">
+            <div class="customer-details-icon">
+              <div class="align-center">CW</div>
+            </div>
+            <div class="customer-details-content">
+              <div class="customer-details-title title-text-bold">
+                Cameron Williamson
+              </div>
+              <div class="customer-details-subtitle">Buffalo, NY</div>
+            </div>
+          </div>
+          <div class="customer-details">
+            <div class="customer-details-icon">
+              <div class="align-center">N</div>
+            </div>
+            <div class="customer-details-content">
+              <div class="customer-details-title title-text-bold">
+                Leslie Alexander
+              </div>
+              <div class="customer-details-subtitle">Los Angeles, CA</div>
+            </div>
+          </div>
+        </div>
+        <div class="order-details">
+          <div class="content-card">
+            <div class="content-card-header-section">
+              <div class="content-card-header-title title-text-bold">
+                Today's Orders
+              </div>
+              <div class="content-card-header-subtitle">
+                Latest orders for today
+              </div>
+            </div>
+            <div class="content-card-body align-center">
+              <div class="matrix-card-container">
+                <div class="matrix-card-number secondary-text align-center">
+                  #17335
+                </div>
+                <div
+                  class="matrix-card-title align-center title-text-bold text-ellipses"
+                >
+                  Google Inc
+                </div>
+                <div class="matrix-card-date secondary-text">4 Apr, 2021</div>
+                <div class="matrix-card-footer align-center">
+                  <div class="matrix-card-left secondary-text">DUE</div>
+                  <div class="matrix-card-right title-text-bold text-ellipses">
+                    $744.00
+                  </div>
+                </div>
+              </div>
+              <div class="matrix-card-container">
+                <div class="matrix-card-number secondary-text align-center">
+                  #17335
+                </div>
+                <div
+                  class="matrix-card-title align-center title-text-bold text-ellipses"
+                >
+                  Google Inc
+                </div>
+                <div class="matrix-card-date secondary-text">4 Apr, 2021</div>
+                <div class="matrix-card-footer align-center">
+                  <div class="matrix-card-left secondary-text">DUE</div>
+                  <div class="matrix-card-right title-text-bold text-ellipses">
+                    $744.00
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content card -->
+    <!-- <div class="content-card">
+      <div class="content-card-header-section">
+        <div class="content-card-header-title title-text-bold">
+          Daily Visitors
+        </div>
+        <div class="content-card-header-subtitle">Today vs Yesterady</div>
+      </div>
+    </div> -->
+    <!-- matrix card -->
+    <!-- <div class="matrix-card-container">
+      <div class="matrix-card-number secondary-text align-center">#17335</div>
+      <div class="matrix-card-title align-center title-text-bold text-ellipses">
+        Google Inc
+      </div>
+      <div class="matrix-card-date secondary-text">4 Apr, 2021</div>
+      <div class="matrix-card-footer align-center">
+        <div class="matrix-card-left secondary-text">DUE</div>
+        <div class="matrix-card-right title-text-bold text-ellipses">
+          $744.00
+        </div>
+      </div>
+    </div> -->
+
+    <!-- matrix button -->
+    <!-- <div class="matrix-button align-center">
+      <div class="matrix-button-value title-text-bold text-ellipses">$21K</div>
+      <div class="matrix-button-title">Order Value</div>
+    </div> -->
+    <!--  customer name with analytics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./scripts.js" type="module"></script>
+  </body>
+</html>
